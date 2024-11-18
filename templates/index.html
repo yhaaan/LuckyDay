@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>♑오늘의 운세🐉</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+</head>
+<body>
+    <div class="container">
+        <h1>♑ 오늘의 운세 🐉</h1>
+        <form action="/" method="post">
+            <label for="birthdate">생일 (년월일, 예: 19900101):</label>
+            <input type="text" id="birthdate" name="birthdate" pattern="\d{8}" required value="{{ birthdate }}" placeholder="20010117" ">
+            <div class="button-container">
+                <button type="submit" name="type" value="zodiac" class="btn-zodiac">별자리 운세</button>
+                <button type="submit" name="type" value="animal" class="btn-animal">띠 운세</button>
+            </div>
+        </form>
+
+        {% if error %}
+            <div class="error-message" style="color: red; margin-top: 10px;">{{ error }}</div>
+        {% endif %}
+
+        {% if zodiac_sign %}
+            <div class="zodiac-info">생일에 따른 별자리: <strong>{{ zodiac_sign }} {{ zodiac_emoji }}</strong></div>
+        {% elif animal_sign %}
+            <div class="zodiac-info">생일에 따른 띠: <strong>{{ animal_sign }} {{ animal_emoji }}</strong></div>
+        {% endif %}
+
+        {% if date_info %}
+            <div class="date-info">{{ date_info }}</div>
+        {% endif %}
+
+        {% if result %}
+            <div class="fortune-result">{{ result }}</div>
+        {% endif %}
+    </div>
+</body>
+</html>

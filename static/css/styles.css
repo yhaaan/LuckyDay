@@ -1,0 +1,112 @@
+/* 기본 스타일 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;  /* 패딩을 줄여서 더 컴팩트하게 */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 15px;  /* 제목의 아래 여백을 줄임 */
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;  /* 입력 칸의 패딩을 줄임 */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 8px;  /* 입력 칸과 버튼 사이의 간격을 줄임 */
+    font-size: 14px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 20px;  /* 버튼의 패딩을 줄임 */
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+.error-message {
+    color: red;
+    margin-top: 8px;  /* 오류 메시지 위쪽 여백을 줄임 */
+}
+
+.zodiac-info {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;  /* 별자리 정보 아래 여백을 줄임 */
+}
+
+.fortune-result {
+    margin-top: 8px;  /* 위쪽 여백을 줄임 */
+    line-height: 1.4;  /* 줄 간격을 줄임 */
+    text-align: center;
+    white-space: pre-line;
+    margin-bottom: 8px;  /* 아래쪽 여백을 줄임 */
+}
+
+.date-info {
+    font-weight: bold;
+    margin-bottom: 5px;  /* 날짜 정보 아래 여백 */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+}
+.btn {
+    flex: 1;
+    padding: 8px 0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+.btn-zodiac {
+    background-color: #6A0DAD; /* 기본 보라색 */
+    transition: background-color 0.3s ease; /* 애니메이션 추가 */
+}
+
+.btn-zodiac:hover {
+    background-color: #4B0082; /* 찐한 보라색 */
+    transition: background-color 0.6s ease; /* 애니메이션 추가 */
+}
+
+.btn-animal {
+    background-color: #FF4500; /* 기본 빨간색 */
+    transition: background-color 0.1s ease; /* 애니메이션 추가 */
+}
+
+.btn-animal:hover {
+    background-color: #B22222; /* 찐한 빨간색 */
+    transition: background-color 0.6s ease; /* 애니메이션 추가 */
+}
