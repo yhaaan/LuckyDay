@@ -127,4 +127,5 @@ def home():
     return render_template('index.html', birthdate=birthdate, zodiac_sign=zodiac_sign, zodiac_emoji=zodiac_emoji, animal_sign=animal_sign,animal_emoji=animal_emoji, date_info=date_info, result=result, error=error)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000)
+
