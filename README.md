@@ -18,5 +18,5 @@
 ### 🛠️기술 스택
 
 - **백엔드**: Python, Flask, BeautifulSoup (웹 스크래핑)
-- **프론트엔드**: HTML, CSS, JavaScript, Bootstrap (간단한 스타일링 및 사용자 경험 향상)
+- **프론트엔드**: HTML, CSS, JavaScript (간단한 스타일링 및 사용자 경험 향상)
 - **배포**: `gunicorn`과 `screen`을 활용해 서버에 안정적으로 배포
