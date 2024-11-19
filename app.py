@@ -30,22 +30,23 @@ def get_zodiac_sign(month, day):
         return "양자리"
     elif (month == 4 and day >= 20) or (month == 5 and day <= 20):
         return "황소자리"
-    elif (month == 5 and day >= 21) or (month == 6 and day <= 20):
+    elif (month == 5 and day >= 21) or (month == 6 and day <= 21):
         return "쌍둥이자리"
-    elif (month == 6 and day >= 21) or (month == 7 and day <= 22):
+    elif (month == 6 and day >= 22) or (month == 7 and day <= 22):
         return "게자리"
     elif (month == 7 and day >= 23) or (month == 8 and day <= 22):
         return "사자자리"
-    elif (month == 8 and day >= 23) or (month == 9 and day <= 22):
+    elif (month == 8 and day >= 23) or (month == 9 and day <= 23):
         return "처녀자리"
-    elif (month == 9 and day >= 23) or (month == 10 and day <= 22):
+    elif (month == 9 and day >= 24) or (month == 10 and day <= 22):
         return "천칭자리"
-    elif (month == 10 and day >= 23) or (month == 11 and day <= 21):
+    elif (month == 10 and day >= 23) or (month == 11 and day <= 22):
         return "전갈자리"
-    elif (month == 11 and day >= 22) or (month == 12 and day <= 21):
+    elif (month == 11 and day >= 23) or (month == 12 and day <= 24):
         return "사수자리"
-    else:
+    else:  # (month == 12 and day >= 25) or (month == 1 and day <= 19)
         return "염소자리"
+
     
 def get_animal_sign(year, month, day):
     # 양력 생일을 음력으로 변환
