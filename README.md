@@ -2,6 +2,7 @@
 >## Check Your Today Luck!!
 
 * 공부하기 싫어서 만들어봤습니다.
+### 현재 임시 휴업 중입니다.
 
 ### [오늘의 운세(클릭)](https://luck.freleefty.org/)를 확인해보세요.
 
